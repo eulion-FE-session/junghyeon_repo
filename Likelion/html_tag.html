@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+    <label for="name">이름</label>
+    <input type="text" id="name" placeholder="이름을 입력하세요" required><br>
+
+    <label for="password">비밀번호</label>
+    <input type="password" id="password" placeholder="비밀번호를 입력하세요" required><br>
+
+    <label for="e_mail">이메일</label>
+    <input type="text" id="e_mail" placeholder="이메일" required><br>
+
+    <label for="age">나이</label>
+    <input type="number" id="age" placeholder="나이" required><br>
+
+    <label for="gender">성별</label><br>
+    <label for="male">남성</label>
+    <input type="radio" id="male" name="gender">
+    <label for="female">여성</label>
+    <input type="radio" id="female" name="gender"><br>
+
+    <label for="date">생년월일</label>
+    <input type="datetime-local" id="date" name="date"><br>
+    
+    <label for="file">파일</label>
+    <input type="file" id="file" name="file"><br>
+
+    <label for="button">버튼</label><br>
+    <button type="button" id="button" name="button">일반 버튼</button><br>
+    <label for="nationality">국적</label><br>
+    <select name="nationality">
+        <option value="ko">한국</option>
+        <option value="ch">중국</option>
+        <option value="ja">일본</option>
+        <option value="ya">야르</option>
+    </select><br>
+    <label for="hobby">취미 선택 : </label>
+    <label for="move">영화</label>
+    <input type="checkbox" id="move" name="move">
+    <label for="music">음악</label>
+    <input type="checkbox" id="music" name="music">
+    <label for="sleep">취침</label>
+    <input type="checkbox" id="sleep" name="sleep">
+    </fieldset>
+</body>
+</html>

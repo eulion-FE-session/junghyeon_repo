@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026년 3월 31일 HTML 과제</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1pt solid hotpink;
+            padding: 12px;
+        }
+
+        header, nav, main, section, article, aside, footer {
+            border: 1px solid gray;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        figure {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>2026년 3월 31일 과제(h1)</h1>
+    <h2>h2 제목</h2>
+    <h3>h3 제목</h3>
+    <h4>h4 제목</h4>
+    <h5>h5 제목</h5>
+    <h6>h6 제목</h6>
+
+    <hr>
+
+    <h2>p 태그 사용</h2>
+    <p>
+        과제 너무 하기 싫다 하나하나 하기 힘들다네..<br>
+        다른분들은 과제를 해왔을련지<br>
+        피곤하다
+    </p>
+
+    <i>(i)텍스트를 이텔릭체로 표현</i><br>
+    <em>(em)텍스트를 이텔릭체로 강조</em><br>
+    <b>(b)텍스트를 진하게</b><br>
+    <strong>(strong)텍스트를 진하게 강조</strong><br><br><br>
+
+    <h2>목록 태그 사용</h2>
+    <ol>
+        <li>li 태그</li>
+        <li>사용중</li>
+        <li>li 태그</li>
+        <li>사용중</li>
+        <li>지나가쇼</li>
+    </ol>
+
+    <br>
+
+    <ul>
+        <li>li 태그</li>
+        <li>사용중</li>
+        <li>li 태그</li>
+        <li>사용중</li>
+        <li>지나가쇼</li>
+    </ul>
+
+    <dl>
+        <dt>dl, dt 태그 사용</dt>
+        <dd>여기는 dd태그 <strong>dd태그 안에 strong 사용</strong></dd>
+        <dt>dt태그는 정의되는 용어의 제목을 넣는 태그</dt>
+        <dd>dd태그는 용어를 설명하는 태그</dd>
+    </dl>
+
+    <br><br><br>
+
+    <h3>table 태그 사용</h3>
+    <table>
+        <caption>프로필 table</caption>
+        <tr>
+            <th>이름</th>
+            <th>학번</th>
+            <th>학과</th>
+        </tr>
+        <tr>
+            <td>이정현</td>
+            <td>2023162027</td>
+            <td>빅데이터인공지능</td>
+        </tr>
+        <tr>
+            <td>김준한</td>
+            <td>2023162011</td>
+            <td>의료IT</td>
+        </tr>
+        <tr>
+            <td>황유찬</td>
+            <td>2023162038</td>
+            <td>간호</td>
+        </tr>
+    </table>
+
+    <br><br><br>
+
+    <h3>HTML 테이블 그룹 태그</h3>
+    <table>
+        <caption>테이블 그룹 태그 예시</caption>
+
+        <colgroup>
+            <col style="background-color: lightyellow;">
+            <col style="background-color: lightcyan;">
+            <col style="background-color: lavenderblush;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th>태그</th>
+                <th>설명</th>
+                <th>비고</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>&lt;colgroup&gt;</td>
+                <td>열을 그룹으로 묶어주는 태그</td>
+                <td>열별 스타일 지정 가능</td>
+            </tr>
+            <tr>
+                <td>&lt;thead&gt;</td>
+                <td>표의 제목열을 묶는 그룹 태그</td>
+                <td>표의 머리글</td>
+            </tr>
+            <tr>
+                <td>&lt;tbody&gt;</td>
+                <td>표의 일반적인 본문 영역을 묶는 그룹 태그</td>
+                <td>표의 내용</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>&lt;tfoot&gt;</td>
+                <td>표의 하단 영역을 묶는 그룹 태그</td>
+                <td>요약, 합계 등에 사용</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br><br><br>
+
+    <h2>HTML Semantic 태그</h2>
+
+    <header>
+        <h3>header 태그</h3>
+        <p>페이지에 대한 정보를 담는 태그이며 보통 페이지 상단에 위치한다.</p>
+    </header>
+
+    <nav>
+        <h3>nav 태그</h3>
+        <p>다른 페이지나 같은 페이지 안의 다른 부분으로 이동하는 네비게이션 링크를 묶는 태그이다.</p>
+        <a href="#">홈</a> |
+        <a href="#">과제</a> |
+        <a href="#">연락처</a>
+    </nav>
+
+    <main>
+        <section>
+            <h3>section 태그</h3>
+            <p>문서나 응용프로그램의 일반적인 섹션을 표현할 때 사용한다.</p>
+        </section>
+
+        <article>
+            <h3>article 태그</h3>
+            <p>여러가지 아이템들을 묶어 재사용 가능하게 그룹화하는 태그이다.</p>
+        </article>
+
+        <aside>
+            <h3>aside 태그</h3>
+            <p>페이지 전체 내용과 관련성은 있지만 주요 내용과 직접적인 연관은 없는 부가 내용을 넣는 태그이다.</p>
+        </aside>
+    </main>
+
+    <footer>
+        <h3>footer 태그</h3>
+        <p>주로 저작권 정보나 서비스 제공자 정보 등을 사이트 하단에 나타낼 때 사용한다.</p>
+    </footer>
+
+    <br><br><br>
+
+    <h2>details / summary 태그</h2>
+    <details>
+        <summary>summary 태그 : 클릭해서 내용 보기</summary>
+        <p>details 태그는 추가적인 정보를 나타내거나 사용자가 요청하는 정보를 나타낼 때 사용한다.</p>
+        <p>summary 태그는 details 요소의 요약이나 캡션 역할을 한다.</p>
+    </details>
+
+    <br><br><br>
+
+    <h2>figure / figcaption 태그</h2>
+    <figure>
+        <img src="https://via.placeholder.com/200x100" alt="예시 이미지">
+        <figcaption>figcaption : figure 요소의 내용에 대한 캡션 또는 제목을 나타낸다.</figcaption>
+    </figure>
+
+    <br><br><br>
+
+    <h2>mark / time 태그</h2>
+    <p>
+        mark 태그는 <mark>중요한 부분을 하이라이트</mark> 할 때 사용한다.
+    </p>
+    <p>
+        time 태그는 날짜와 시간을 나타낼 때 사용한다 :
+        <time datetime="2026-03-31">2026년 3월 31일</time>
+    </p>
+
+    <br><br><br>
+
+    <h2>Block Element / Inline Element</h2>
+
+    <h3>Block Element</h3>
+    <p>
+        블록 레벨 요소는 부모 요소의 전체 공간을 차지하는 블록을 만든다.
+        대표적인 태그로는 &lt;h1&gt;~&lt;h6&gt;, &lt;ol&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;p&gt; 등이 있다.
+    </p>
+    <p><strong>특징 :</strong> 세로로 나열된다.</p>
+
+    <h3>Inline Element</h3>
+    <p>
+        인라인 레벨 요소는 콘텐츠의 흐름을 끊지 않고 요소를 구성하는 태그에 할당된 공간만 차지한다.
+        대표적인 태그로는 &lt;a&gt;, &lt;em&gt;, &lt;img&gt;, &lt;span&gt; 등이 있다.
+    </p>
+    <p><strong>특징 :</strong> 가로로 나열된다.</p>
+</body>
+</html>
