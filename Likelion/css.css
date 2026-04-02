@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body{
+    background-color:darkblue;
+}
+
+.aa{
+    background-color: white;
+    width: 550px;
+    border: 150px;
+    margin: 50px auto;
+    padding: 30px;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+}
+.bb{
+    width: 300px;
+    background-color: rgb(206, 202, 202);
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
