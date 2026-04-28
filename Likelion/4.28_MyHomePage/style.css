@@ -56,3 +56,6 @@ footer{
     width: 100%;
     background-color: darkslateblue;
 }
+footer p{
+    color: aliceblue;
+}
