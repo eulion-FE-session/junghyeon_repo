@@ -1,0 +1,22 @@
+@charset "utf-8";
+div{
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+}
+
+#pointer{
+    cursor: pointer;
+}
+#text{
+    cursor: text;
+}
+#grab{
+    cursor: grab;
+}
+#wait{
+    cursor: wait;
+}
+#not-allowed{
+    cursor: not-allowed;
+}

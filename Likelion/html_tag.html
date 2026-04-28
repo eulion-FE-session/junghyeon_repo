@@ -7,44 +7,76 @@
     <link rel="stylesheet" href="css.css">
     <title>Document</title>
 </head>
+
 <body>
-    <fieldset class="aa">
-    <label for="name">이름</label><br>
-    <input type="text" id="name" class="bb" placeholder="이름을 입력하세요" required><br>
-    <label for="password">비밀번호</label><br>
-    <input type="password" id="password" class="bb" placeholder="비밀번호를 입력하세요" required><br>
-    <label for="e_mail">이메일</label><br>
-    <input type="text" id="e_mail" class="bb" placeholder="이메일" required><br>
-    <label for="age">나이</label><br>
-    <input type="number" id="age" class="bb" placeholder="나이" required><br>
-    <label for="gender">성별</label><br>
-    <label for="male">남성</label>
-    <input type="radio" id="male" name="gender">
-    <label for="female">여성</label>
-    <input type="radio" id="female" name="gender"><br>
+    <form>
+        <fieldset class="aa">
+            <legend>입력 폼</legend>
 
-    <label for="date">생년월일</label><br>
-    <input type="datetime-local" id="date" name="date" class="bb"><br>
-    
-    <label for="file">파일</label>
-    <input type="file" id="file" name="file"><br>
+            <div class="field">
+                <label for="name">이름</label>
+                <input type="text" id="name" class="bb" placeholder="이름을 입력하세요" required>
+            </div>
 
-    <label for="button">버튼</label><br>
-    <button type="button" id="button" name="button">일반 버튼</button><br>
-    <label for="nationality">국적</label><br>
-    <select name="nationality" id="nationality" class="bb">
-        <option value="ko">한국</option>
-        <option value="ch">중국</option>
-        <option value="ja">일본</option>
-        <option value="ya">야르</option>
-    </select><br>
-    <label for="hobby">취미 선택 : </label>
-    <label for="move">영화</label>
-    <input type="checkbox" id="move" name="move">
-    <label for="music">음악</label>
-    <input type="checkbox" id="music" name="music">
-    <label for="sleep">취침</label>
-    <input type="checkbox" id="sleep" name="sleep">
-    </fieldset>
+            <div class="field">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" class="bb" placeholder="비밀번호를 입력하세요" required>
+            </div>
+
+            <div class="field">
+                <label for="e_mail">이메일</label>
+                <input type="email" id="e_mail" class="bb" placeholder="이메일" required autocomplete="email">
+            </div>
+
+            <div class="field">
+                <label for="age">나이</label>
+                <input type="number" id="age" class="bb" placeholder="나이" required min="0">
+            </div>
+
+            <fieldset class="inline-fieldset">
+                <legend>성별</legend>
+                <label for="male">남성</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="female">여성</label>
+                <input type="radio" id="female" name="gender" value="female">
+            </fieldset>
+
+            <div class="field">
+                <label for="date">생년월일</label>
+                <input type="datetime-local" id="date" name="date" class="bb">
+            </div>
+
+            <div class="field">
+                <label for="file">파일</label>
+                <input type="file" id="file" name="file">
+            </div>
+
+            <div class="field">
+                <label for="button">버튼</label>
+                <button type="button" id="button" name="button">일반 버튼</button>
+            </div>
+
+            <div class="field">
+                <label for="nationality">국적</label>
+                <select name="nationality" id="nationality" class="bb">
+                    <option value="ko">한국</option>
+                    <option value="ch">중국</option>
+                    <option value="ja">일본</option>
+                    <option value="other">기타</option>
+                </select>
+            </div>
+
+            <fieldset class="inline-fieldset">
+                <legend>취미 선택</legend>
+                <label for="movie">영화</label>
+                <input type="checkbox" id="movie" name="hobby" value="movie">
+                <label for="music">음악</label>
+                <input type="checkbox" id="music" name="hobby" value="music">
+                <label for="sleep">취침</label>
+                <input type="checkbox" id="sleep" name="hobby" value="sleep">
+            </fieldset>
+        </fieldset>
+    </form>
 </body>
+
 </html>

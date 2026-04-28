@@ -1,23 +1,58 @@
 @charset "utf-8";
 
-body{
-    background-color:darkblue;
+body {
+    background-color: darkblue;
 }
 
-.aa{
-    background-color: white;
+.aa {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     width: 550px;
-    border: 150px;
     margin: 50px auto;
     padding: 30px;
-    align-items: center;
     text-align: center;
+    background-color: white;
+    border: 1px solid #ddd;
     border-radius: 20px;
 }
-.bb{
+
+.field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    width: 100%;
+}
+
+.inline-fieldset {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.inline-fieldset legend {
+    padding: 0 0.35rem;
+    font-size: 0.95rem;
+}
+
+.bb {
     width: 300px;
     background-color: rgb(206, 202, 202);
     text-align: center;
     border: none;
     border-radius: 10px;
+}
+
+.bb:hover {
+    background-color: rgb(80, 231, 113);
+    border: 2px solid tomato;
+}
+
+.bb:focus {
+    background-color: rgb(55, 247, 218);
+    border: 2px solid rgb(214, 69, 243);
 }

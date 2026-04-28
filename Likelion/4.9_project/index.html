@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <main class="container">
+        <section class="stats" aria-label="상단 통계">
+            <article class="card card--blue">
+                <h2 class="card__title">방문자</h2>
+                <p class="card__value">12,847</p>
+                <p class="card__delta delta delta--up">
+                    <span class="delta__icon" aria-hidden="true">▲</span>
+                    <span class="delta__text">12% 지난주 대비</span>
+                </p>
+            </article>
+
+            <article class="card card--amber">
+                <h2 class="card__title">매출</h2>
+                <p class="card__value">₩2.4M</p>
+                <p class="card__delta delta delta--up">
+                    <span class="delta__icon" aria-hidden="true">▲</span>
+                    <span class="delta__text">8% 지난주 대비</span>
+                </p>
+            </article>
+
+            <article class="card card--pink">
+                <h2 class="card__title">전환율</h2>
+                <p class="card__value">3.6%</p>
+                <p class="card__delta delta delta--down">
+                    <span class="delta__icon" aria-hidden="true">▼</span>
+                    <span class="delta__text">2% 지난주 대비</span>
+                </p>
+            </article>
+        </section>
+
+        <section class="panel" aria-label="최근 활동">
+            <h2 class="panel__title">최근 활동</h2>
+
+            <ul class="activity" role="list">
+                <li class="activity__item">
+                    <span class="dot dot--indigo" aria-hidden="true"></span>
+                    <span class="activity__text">새 사용자 가입</span>
+                    <time class="activity__time" datetime="PT2M">2분 전</time>
+                </li>
+                <li class="activity__item">
+                    <span class="dot dot--amber" aria-hidden="true"></span>
+                    <span class="activity__text">결제 완료</span>
+                    <time class="activity__time" datetime="PT15M">15분 전</time>
+                </li>
+                <li class="activity__item">
+                    <span class="dot dot--green" aria-hidden="true"></span>
+                    <span class="activity__text">서버 배포 완료</span>
+                    <time class="activity__time" datetime="PT1H">1시간 전</time>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>
